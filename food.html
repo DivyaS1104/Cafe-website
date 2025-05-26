@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="food.css" />
+    <script src="http://localhost/cafeweb/script.js"></script>
+     </head>
+     <body>
+      
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">☕ Coffee</h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.php" class="button">Login</a>
+          </li>
+
+
+        </ul>
+        
+        
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+   
+
+
+
+    
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Best Coffee</h2>
+            <h3 class="subtitle">Make your day great with our special coffee!</h3>
+            <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
+
+            <div class="buttons">
+              <a href="#menu" class="button order-now">Order Now</a>
+              <a href="#contact" class="button contact-us">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="http://localhost/cafeweb/images/home.jpg" alt="Coffee" class="hero-image" />
+          </div>
+
+
+          
+
+
+                </section>
+
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="http://localhost/cafeweb/images/aboutus.jpg" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">At Coffee House in Berndorf, Germany, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike. We're dedicated to providing an exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in comfort.</p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu section -->
+      
+
+      
+        
+        
+      
+          <div class="categories" id="menu">
+              <button  class="category-button" data-category="all">All</button>
+              <button class="category-button" data-category="hot-classics">Hot Beverages</button>
+              <button class="category-button" data-category="snacks">Snacks</button>
+              <button class="category-button" data-category="desserts">Desserts</button>
+              <button class="category-button" data-category="chill-items">Cold Beverages</button>
+          </div>
+      
+          <div class="menu-container">
+              <!-- All Section -->
+              <div class="menu-section active" id="all">
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/muffin.jpeg" alt="Chocolate Muffin">
+                      <h3>Choco Muffin</h3>
+                      <span>$3.50</span>
+                      <select class="size-selector" data-name="Chocolate Muffin" data-price="3.50">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Chocolate Muffin" data-price="3.50">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/cheesecake.jpeg" alt="Cheesecake">
+                      <h3>Cheesecake</h3>
+                      <span>$5.50</span>
+                      <select class="size-selector" data-name="Cheesecake" data-price="5.50">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Cheesecake" data-price="5.50">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/cappacino.jpeg" alt="Cappuccino">
+                      <h3>Cappuccino</h3>
+                      <span>$4.50</span>
+                      <select class="size-selector" data-name="Cappuccino" data-price="4.50">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Cappuccino" data-price="4.50">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/espresso.jpeg" alt="Espresso">
+                      <h3>Espresso</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="Espresso" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Espresso" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/sandwich.jpeg" alt="Veg Sandwich">
+                      <h3>Veg Sandwich</h3>
+                      <span>$5.00</span>
+                      <select class="size-selector" data-name="Veg Sandwich" data-price="5.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="vegsandwich" data-price="5.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/croissant.jpeg" alt="Croissant">
+                      <h3>Croissant</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="Croissant" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Croissant" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/hotchoco.jpeg" alt="Hot chocolate">
+                      <h3>Hot Chocolate</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="Hot Chocolate" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Hot chocolate" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/greentea.jpeg" alt="Green tea">
+                      <h3>Green tea</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="greentea" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="greentea" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/chailatte.jpeg" alt="Chai latte">
+                      <h3>Hot Chai latte</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="chailatte" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="chailatee" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/vanillalatte.jpeg" alt="Vanilla latte">
+                      <h3>Vanilla latte</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="vanillalatte" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="vanillalatte" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/icelatte.jpeg" alt="Iced Latte">
+                      <h3>Iced Latte</h3>
+                      <span>$4.50</span>
+                      <select class="size-selector" data-name="icedlatte" data-price="4.50">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="icedlatte" data-price="4.50">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/coldbrew.jpeg" alt="Cold Brew">
+                      <h3>Cold Brew</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="coldbrew" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="coldbrew" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/icedvanilla.jpeg" alt="Iced vanilla latte">
+                      <h3>Iced vanilla latte</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="icedvanilaltte" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="icedvanilaltte" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/icedameri.jpeg" alt="Iced Americano">
+                      <h3>Iced Americano</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="Iced Americano" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Iced Americano" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/watermelon.jpeg" alt="Watermelon Granita">
+                      <h3>Melon Granita</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="Watermelon Granita" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Watermelon Granita" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/icedmocha.jpeg" alt="Iced Mocha">
+                      <h3>Iced Mocha</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="icedmocha" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="icedmocha" data-price="4.00">Add to Cart</button>
+
+                  </div>
+      
+              </div>
+      
+              <!-- Hot Classics Section -->
+              <div class="menu-section" id="hot-classics">
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/cappacino.jpeg" alt="Cappuccino">
+                      <h3>Cappuccino</h3>
+                      <span>$4.50</span>
+                      <select class="size-selector" data-name="Cappuccino" data-price="4.50">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Cappuccino" data-price="4.50">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/back2.jpeg" alt="Espresso">
+                      <h3>Espresso</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="Espresso" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Espresso" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/back2.jpeg" alt="Hot chocolate">
+                      <h3>Hot Chocolate</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="Hot chocolate" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="Hot chocolate" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/greentea.jpeg" alt="Green tea">
+                      <h3>Green tea</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="greentea" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="greentea" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/chailatte.jpeg" alt="Chai latte">
+                      <h3>Hot Chai latte</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="chailatee" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="chailatee" data-price="3.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/vanillalatte.jpeg" alt="Vanilla latte">
+                      <h3>Vanilla latte</h3>
+                      <span>$3.00</span>
+                      <select class="size-selector" data-name="vanillalatte" data-price="3.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="vanillalatte" data-price="3.00">Add to Cart</button>
+
+                  </div>
+              </div>
+      
+              <!-- Snacks Section -->
+              <div class="menu-section" id="snacks">
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/sandwich.jpeg" alt="Veg Sandwich">
+                      <h3>Veg Sandwich</h3>
+                      <span>$5.00</span>
+                      <select class="size-selector" data-name="Veg Sandwich" data-price="5.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="vegsandwich" data-price="5.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/croissant.jpeg" alt="Croissant">
+                      <h3>Croissant</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="croissant" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="croissant" data-price="4.00">Add to Cart</button>
+
+                  </div>
+              </div>
+      
+              <!-- Desserts Section -->
+              <div class="menu-section" id="desserts">
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/muffin.jpeg" alt="Chocolate Muffin">
+                      <h3>Choco Muffin</h3>
+                      <span>$3.50</span>
+                      <select class="size-selector" data-name="chocolate Muffin" data-price="3.50">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="chocolate Muffin" data-price="3.50">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/cheesecake.jpeg" alt="Cheesecake">
+                      <h3>Cheesecake</h3>
+                      <span>$5.50</span>
+                      <select class="size-selector" data-name="cheesecake" data-price="5.50">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="cheesecake" data-price="5.50">Add to Cart</button>
+
+                  </div>
+              </div>
+      
+              <!-- Chill Items Section -->
+              <div class="menu-section" id="chill-items">
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/icelatte.jpeg" alt="Iced Latte">
+                      <h3>Iced Latte</h3>
+                      <span>$4.50</span>
+                      <select class="size-selector" data-name="icedlatte" data-price="4.50">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="icedlatte" data-price="4.50">Add to Cart</button>
+    
+                      
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/coldbrew.jpeg" alt="Cold Brew">
+                      <h3>Cold Brew</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="coldbrew" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="coldbrew" data-price="4.00">Add to Cart</button>
+    
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/icedvanilla.jpeg" alt="Iced vanilla latte">
+                      <h3>Iced vanilla latte</h3>
+                      <span>$4.00</span>
+
+                      <select class="size-selector" data-name="icedvanilaltte" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="icedvanilaltte" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/back2.jpeg" alt="Iced Americano">
+                      <h3>Iced Americano</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="icedameri" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="icedameri" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/watermelon.jpeg" alt="Watermelon Granita">
+                      <h3>Melon Granita</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="watermelon Granita" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="watermelon Granita" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  <div class="menu-item">
+                      <img src="http://localhost/cafeweb/images/icedmocha.jpeg" alt="Iced Mocha">
+                      <h3>Iced Mocha</h3>
+                      <span>$4.00</span>
+                      <select class="size-selector" data-name="icedmocha" data-price="4.00">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <button class="add-to-cart" data-name="icedmocha" data-price="4.00">Add to Cart</button>
+
+                  </div>
+                  
+              </div>
+          </div>
+
+          <div class="cart-container">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will appear here -->
+            </div>
+            <div class="cart-footer">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button id="proceed-to-pay">Proceed to Pay</button>
+            </div>
+        </div>
+      <!-- Testimonials section -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src= "http://localhost/cafeweb/images/testi.jpg" alt="User" class="user-image" />
+                  <h3 class="name">James Willson</h3>
+                  <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order again!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="C:/Users/kuben/Downloads/user2.webp"alt="User" class="user-image" />
+                  <h3 class="name">Sarah Johnson</h3>
+                  <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="" alt="User" class="user-image" />
+                  <h3 class="name">Michael Brown</h3>
+
+                  <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="" alt="User" class="user-image" />
+                  <h3 class="name">Emily Harris</h3>
+
+                  <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend."</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="" alt="User" class="user-image" />
+                  <h3 class="name">Anthony Thompson</h3>
+
+                  <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."</i>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery section -->
+      
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <div class="gallery-item">
+              <img src="http://localhost/cafeweb/images/icedmocha.jpeg" alt="Gallery Image" class="gallery-image" />
+              <div class="overlay">ICED MOCHA  
+                
+                  <br>
+                The Ultimate Cool Indulgence for Coffee Lovers.
+
+                
+      
+              </div>
+              
+            </div>
+            <div class="gallery-item">
+              <img src="http://localhost/cafeweb/images/vanillalatte.jpeg" alt="Gallery Image" class="gallery-image" />
+              <div class="overlay">VANILLA Latte
+                <br>
+                A Timeless Classic Perfectly Brewed for You
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="http://localhost/cafeweb/images/hotchoco.jpeg" alt="Gallery Image" class="gallery-image" />
+              <div class="overlay">BELGIUM HOT Chocolate
+                <br>
+                A Heavenly Treat for Sweet Tooths.
+              </div>
+ 
+          </div>
+            <div class="gallery-item">
+              <img src="http://localhost/cafeweb/images/icedameri.jpeg" alt="Gallery Image" class="gallery-image" />
+              <div class="overlay">ICED AMERICANO
+              <br>
+               The Perfect Iced Americano to Kickstart Your Day.
+
+
+
+              </div>
+ 
+            </div>
+            <div class="gallery-item">
+              <img src="http://localhost/cafeweb/images/cheesecake.jpeg" alt="Gallery Image" class="gallery-image" />
+              <div class="overlay">CHEESECAKE 
+                <br>
+                A Slice of Heaven Our Creamy, Decadent Cheesecake Melts in Your Mouth.
+
+              </div>
+ 
+            </div>
+            <div class="gallery-item">
+              <img src="http://localhost/cafeweb/images/sandwich.jpeg" alt="Gallery Image" class="gallery-image" />
+              <div class="overlay">VEG SANDWICH 
+                <br>
+                Light, Crisp, and Full of Flavor.
+              </div>
+ 
+            </div>
+          </ul>
+        </div>
+      </section>     
+     
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>info@coffeeshopwebsite.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>0987654321</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 10:00 AM - 3:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.poojadivyaweb.com</p>
+            </li>
+          </ul>
+
+          <form action="contact.php" method="post" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" name="name" required />
+            <input type="email" placeholder="Your email" class="form-input" name="email" required />
+            <textarea placeholder="Your message" class="form-input" name="message" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+      
+      
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2025 Coffee Shop</p>
+
+          <div class="social-link-list">
+            <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+    
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+  </body>
+</html>
